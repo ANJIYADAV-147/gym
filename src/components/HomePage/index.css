@@ -1,0 +1,218 @@
+.Home-page-container{
+    background-image: url("https://vfitclub.netlify.app/image/hero-background.webp");
+    background-position: bottom, center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.Home-container{
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px){
+    .home-heading {
+        font-size: 30px !important;
+    }
+    .remove-content{
+        display: none;
+        width: 800px;
+    }   
+    
+}
+.about-us-container{
+    background-color: black;
+    height: 80vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-img{
+    height: 100%;
+}
+@media screen and (max-width: 768px){
+    .about-us-container{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+        align-items: center;
+    }
+    .about-us-information{
+        width: 300px;
+    }
+    .about-img{
+        height: 50vh;
+        margin-left: 20px;
+    }
+    .desktop-about-heading {
+        display: none;
+    }
+    .description {
+        display: none;
+    }
+    .about-items{
+        margin: 10px !important;
+    }
+}
+.mobile-about-heading{
+    color: #ffffff;
+}
+@media screen and (min-width: 768px){
+    .mobile-about-heading{
+        display: none;
+    }
+}
+
+
+
+.section-ourteam {
+    background-color: #1f1e1e;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .ourteam {
+    padding: 2rem 3rem;
+  }
+  
+   .title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 50px;
+    
+  }
+  
+ .team-members {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(min-content, 1fr)) [var];
+    grid-template-columns: repeat(
+      var(--four-col-layout),
+      minmax(-webkit-min-content, 1fr)
+    );
+    grid-template-columns: repeat(
+      var(--four-col-layout),
+      minmax(min-content, 1fr)
+    );
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+   .team-member {
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  
+ .team-member img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+  }
+
+    .member-name {
+    padding: 1rem 0.8rem;
+    background-color: rgb(227, 183, 21);
+    
+    position: absolute;
+    padding-right: 40px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 4;
+    -webkit-clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%);
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  
+    .member-desg {
+    font-style: italic;
+    position: absolute;
+    padding: 1rem 0.8rem;
+    font-size: 1.5rem;
+    background-color: rgb(42, 41, 41);
+    width: 100%;
+    bottom: 0px;
+    text-align: end;
+    z-index: 3;
+    right: 0px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+   .team-member:hover .member-desc {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    top: 0px;
+  }
+  
+ .member-desc {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    left: 100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(20, 20, 20, 0.58);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: 1.8rem;
+    top: 0px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .team-memmber-info{
+    background-color: #1a1818;
+  }
+
+  .slider-teams-container{
+    width: 50%;
+    margin: 0px;
+  }
+  .render-team-mobile-view{
+    background-color: #1f1e1e;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .render-team-desktop-view{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 769px){
+    .render-team-mobile-view{
+      display: none;
+    }
+  } 
