@@ -22,12 +22,11 @@ const Header = () => {
                 <div className='header-container pt-3 pb-3'>
                     <h1 className='header-logo text-3xl font-extrabold'>GymFluencer</h1>
                     <ul className='header-list-container mt-2' type='none'>
-                        <li className='items'>Features</li>
-                        <li className='items'>Diet plans</li>
-                        <li className='items'>Workouts Plans</li>
-                        <li className='items'>Blog</li>
-                        <li className='items'>FAQ's</li>
-                        <li className='items'>Contact Us</li>
+                        <li className='items'>About Us</li>
+                        <li className='items'>Membership</li>
+                        <li className='items'>Our Team</li>
+                        <li className='items'>Contact</li>
+                        
                     </ul>
                     <div className='header-button-container'>
                         <button className='header-button'>Get Started</button>
@@ -54,6 +53,7 @@ const Header = () => {
                             <IoMenu size={30} className='text-yellow-400'/>
                         </Button>
                         <Menu
+                        
                             id="demo-positioned-menu"
                             aria-labelledby="demo-positioned-button"
                             anchorEl={anchorEl}
@@ -67,13 +67,14 @@ const Header = () => {
                                 vertical: 'top',
                                 horizontal: 'left',
                             }}
+                            className='menu-container'
+                            
                         >
-                            <MenuItem onClick={handleClose}>Features</MenuItem>
-                            <MenuItem onClick={handleClose}>Diet plans</MenuItem>
-                            <MenuItem onClick={handleClose}>Workouts Plans</MenuItem>
-                            <MenuItem onClick={handleClose}>Blog</MenuItem>
-                            <MenuItem onClick={handleClose}>FAQ's</MenuItem>
-                            <MenuItem onClick={handleClose}>Contact Us</MenuItem>
+                            <MenuItem  onClick={handleClose}>About</MenuItem>
+                            <MenuItem onClick={handleClose}>Membership</MenuItem>
+                            <MenuItem onClick={handleClose}>Our Team</MenuItem>
+                            <MenuItem onClick={handleClose}>Contact</MenuItem>
+                            <MenuItem onClick={handleClose}>Reviews</MenuItem>
                             <MenuItem onClick={handleClose}>Get Started</MenuItem>
                             <MenuItem onClick={handleClose}>Login</MenuItem>
                         </Menu>

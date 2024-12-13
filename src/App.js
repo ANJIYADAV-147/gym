@@ -3,9 +3,11 @@ import './App.css';
 
 import HomePage from './components/HomePage';
 
-const App=()=>(
+const App = () => (
   <>
-  <HomePage/>
+    <div className='app-container'>
+      <HomePage />
+    </div>
   </>
 )
 
